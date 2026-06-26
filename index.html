@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plixory – Building the future of emotional intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #030408;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+
+        /* Subtle mesh background grid */
+        .grid-bg {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+
+        .blur-purple {
+            background: radial-gradient(circle, rgba(147, 51, 234, 0.15) 0%, transparent 70%);
+        }
+
+        .blur-cyan {
+            background: radial-gradient(circle, rgba(6, 182, 212, 0.12) 0%, transparent 70%);
+        }
+
+        .text-gradient {
+            background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Ambient Glow Layers -->
+    <div class="absolute top-0 left-0 w-full h-[800px] blur-purple pointer-events-none z-0"></div>
+    <div class="absolute top-0 right-0 w-[600px] h-[600px] blur-cyan pointer-events-none z-0"></div>
+
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#030408]/60 backdrop-blur-md border-b border-white/5 py-4 px-6 md:px-16 flex justify-between items-center">
+        <div class="flex items-center space-x-2.5">
+            <div class="h-7 w-7 rounded-full bg-gradient-to-tr from-purple-600 to-indigo-500 flex items-center justify-center p-1.5 shadow-md shadow-purple-500/20">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-white w-full h-full"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <span class="text-lg font-bold tracking-tight text-white">Plixory</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-[13px] font-medium text-gray-400">
+            <a href="#about" class="hover:text-white transition">About</a>
+            <a href="#technology" class="hover:text-white transition">Technology</a>
+            <a href="#vision" class="hover:text-white transition">Vision</a>
+            <a href="#request" class="hover:text-white transition">Request Build</a>
+        </div>
+        <a href="#join" class="bg-zinc-900 border border-white/10 text-white text-[12px] font-medium px-4 py-1.5 rounded-full hover:bg-white/5 transition">
+            Join Plixory
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="grid-bg relative pt-44 pb-24 px-4 flex flex-col items-center text-center border-b border-white/5">
+        <div class="inline-flex items-center space-x-2 bg-white/5 border border-white/10 px-3.5 py-1 rounded-full mb-8 backdrop-blur-sm">
+            <span class="w-1.5 h-1.5 rounded-full bg-purple-400 shadow-sm"></span>
+            <span class="text-[11px] font-medium text-gray-300 tracking-wide">A new generation of emotionally intelligent AI</span>
+        </div>
+        
+        <h1 class="text-5xl md:text-[76px] font-bold tracking-tight max-w-5xl mb-8 leading-[1.05] text-gradient">
+            Building the future of emotional intelligence
+        </h1>
+        
+        <p class="text-gray-400 text-base md:text-[17px] max-w-2xl mb-12 leading-relaxed">
+            Plixory is a next-generation AI ecosystem reshaping how humans and machines understand each other — through emotion, memory, and meaningful conversation.
+        </p>
+
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 z-10">
+            <a href="#join" class="bg-gradient-to-r from-purple-400 to-indigo-400 text-black font-semibold text-[13px] px-6 py-3 rounded-xl shadow-lg shadow-purple-500/10 hover:opacity-90 transition flex items-center justify-center space-x-1">
+                <span>Explore Plixory</span>
+                <span>&rarr;</span>
+            </a>
+            <a href="#technology" class="bg-transparent border border-white/10 hover:bg-white/5 text-gray-300 font-medium text-[13px] px-6 py-3 rounded-xl transition">
+                View Technology
+            </a>
+        </div>
+    </section>
+
+    <!-- Stats & About Section -->
+    <section id="about" class="max-w-6xl mx-auto px-6 pt-20 pb-24">
+        <div class="grid grid-cols-3 gap-4 border-b border-white/5 pb-20 text-center">
+            <div>
+                <div class="text-3xl md:text-4xl font-bold text-white mb-1">2</div>
+                <div class="text-[11px] uppercase tracking-wider text-gray-500 font-medium">Core AI systems</div>
+            </div>
+            <div>
+                <div class="text-3xl md:text-4xl font-bold text-purple-400 mb-1">&infin;</div>
+                <div class="text-[11px] uppercase tracking-wider text-gray-500 font-medium">Conversations remembered</div>
+            </div>
+            <div>
+                <div class="text-3xl md:text-4xl font-bold text-white mb-1">1</div>
+                <div class="text-[11px] uppercase tracking-wider text-gray-500 font-medium">Unified intelligence</div>
+            </div>
+        </div>
+
+        <div class="pt-24 max-w-4xl">
+            <div class="text-[11px] uppercase font-bold text-purple-400 tracking-widest mb-6">About Plixory</div>
+            <h2 class="text-4xl md:text-[54px] font-bold text-white tracking-tight leading-tight mb-8">
+                Machines should understand us, not just answer us.
+            </h2>
+            <p class="text-gray-400 text-base md:text-[18px] leading-relaxed">
+                Plixory is a research-driven AI company building the foundations of emotionally intelligent communication. We believe the next leap in technology isn't more data — it's more understanding.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+            <div class="bg-[#090b11] border border-white/5 p-8 rounded-2xl">
+                <div class="w-9 h-9 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-6 text-sm">❤️</div>
+                <h3 class="text-white font-semibold text-base mb-2">Emotion first</h3>
+                <p class="text-gray-400 text-[13px] leading-relaxed">AI designed to perceive, interpret, and respond to human emotion with care.</p>
+            </div>
+            <div class="bg-[#090b11] border border-white/5 p-8 rounded-2xl">
+                <div class="w-9 h-9 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-6 text-sm">💬</div>
+                <h3 class="text-white font-semibold text-base mb-2">Human-like dialogue</h3>
+                <p class="text-gray-400 text-[13px] leading-relaxed">Conversations that feel natural — with memory, tone, and intention.</p>
+            </div>
+            <div class="bg-[#090b11] border border-white/5 p-8 rounded-2xl">
+                <div class="w-9 h-9 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-6 text-sm">🌿</div>
+                <h3 class="text-white font-semibold text-base mb-2">A unified ecosystem</h3>
+                <p class="text-gray-400 text-[13px] leading-relaxed">Search and Emotional AI built as one connected intelligence layer.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Deep-Dive -->
+    <section id="technology" class="bg-[#06080d]/60 border-y border-white/5 py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-[11px] uppercase font-bold text-purple-400 tracking-widest mb-4">Technology</div>
+            
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-6 mb-16">
+                <h2 class="text-4xl md:text-[48px] font-bold text-white tracking-tight">Two systems. One intelligence.</h2>
+                <p class="text-gray-400 text-[14px] max-w-md leading-relaxed md:pt-3">
+                    Plixory's core platform combines deep search with emotional reasoning — the two halves of how humans truly understand the world.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gradient-to-b from-[#0c0f17] to-[#080a0f] border border-white/5 rounded-2xl p-8 md:p-10 relative overflow-hidden">
+                    <div class="w-9 h-9 rounded-full bg-black/40 border border-white/10 flex items-center justify-center text-gray-400 mb-6 text-sm">🔍</div>
+                    <div class="text-[10px] tracking-widest uppercase text-gray-500 font-bold mb-4">Plixory Search AI</div>
+                    <h3 class="text-white font-semibold text-xl mb-3">Information, restructured by intelligence.</h3>
+                    <p class="text-gray-400 text-[13px] leading-relaxed mb-8">A knowledge engine that finds, synthesizes, and explains — turning the web into structured, trustworthy answers.</p>
+                    <ul class="space-y-3.5 text-[13px] text-gray-300">
+                        <li class="flex items-center space-x-2.5"><span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span> <span>Multi-source retrieval</span></li>
+                        <li class="flex items-center space-x-2.5"><span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span> <span>Structured reasoning</span></li>
+                        <li class="flex items-center space-x-2.5"><span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span> <span>Cited, real-time answers</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-b from-[#0c0f17] to-[#080a0f] border border-white/5 rounded-2xl p-8 md:p-10 relative overflow-hidden">
+                    <div class="w-9 h-9 rounded-full bg-black/40 border border-white/10 flex items-center justify-center text-purple-400 mb-6 text-sm">🧠</div>
+                    <div class="text-[10px] tracking-widest uppercase text-purple-400 font-bold mb-4">Plixory Emotional AI</div>
+                    <h3 class="text-white font-semibold text-xl mb-3">An AI that remembers how you feel.</h3>
+                    <p class="text-gray-400 text-[13px] leading-relaxed mb-8">A conversational intelligence that perceives emotion, recalls context, and adapts tone — built to be felt, not just used.</p>
+                    <ul class="space-y-3.5 text-[13px] text-gray-300">
+                        <li class="flex items-center space-x-2.5"><span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span> <span>Emotion perception</span></li>
+                        <li class="flex items-center space-x-2.5"><span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span> <span>Long-term memory</span></li>
+                        <li class="flex items-center space-x-2.5"><span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span> <span>Adaptive personality</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="max-w-6xl mx-auto px-6 py-24 text-center">
+        <div class="text-[11px] uppercase font-bold text-purple-400 tracking-widest mb-6">Vision</div>
+        <h2 class="text-4xl md:text-[52px] font-bold text-white tracking-tight leading-tight max-w-4xl mx-auto mb-4">
+            One unified intelligence — across every surface of your life.
+        </h2>
+        <p class="text-gray-400 text-[14px] max-w-xl mx-auto mb-16">
+            Plixory is growing into a full ecosystem of products, devices, and integrations — all powered by the same emotionally aware mind.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            <div class="bg-[#090b11] border border-white/5 p-8 rounded-2xl">
+                <div class="text-lg mb-6">📟</div>
+                <h3 class="text-white font-semibold text-base mb-2">Plixory Devices</h3>
+                <p class="text-gray-400 text-[13px] leading-relaxed">Ambient hardware that listens, learns, and responds with empathy.</p>
+            </div>
+            <div class="bg-[#090b11] border border-white/5 p-8 rounded-2xl">
+                <div class="text-lg mb-6">⚡</div>
+                <h3 class="text-white font-semibold text-base mb-2">Plixory Cloud</h3>
+                <p class="text-gray-400 text-[13px] leading-relaxed">An always-on intelligence layer for apps, agents, and assistants.</p>
+            </div>
+            <div class="bg-[#090b11] border border-white/5 p-8 rounded-2xl">
+                <div class="text-lg mb-6">🔗</div>
+                <h3 class="text-white font-semibold text-base mb-2">Plixory Connect</h3>
+                <p class="text-gray-400 text-[13px] leading-relaxed">A protocol for AI systems to exchange context and emotion.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ecosystem Project Request Section (Connected to Custom Script Database) -->
+    <section id="request" class="max-w-3xl mx-auto px-6 py-16 border-t border-white/5">
+        <div class="bg-gradient-to-b from-[#0c0f17] to-[#04060a] border border-white/10 rounded-2xl p-8 md:p-10 relative">
+            <div class="absolute -top-3 left-8 bg-purple-500 text-black text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full">
+                Ecosystem Co-Creation
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">What should Plixory power next?</h3>
+            <p class="text-gray-400 text-[13px] mb-6">Tell us what kind of websites, physical gadgets, or custom ecosystem software you want us to design and deploy for you.</p>
+            
+            <form id="ecosystem-form" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <input type="text" id="db-name" placeholder="Your Name / Label" required class="w-full bg-[#030408] border border-white/10 rounded-xl px-4 py-2.5 text-[13px] text-white focus:outline-none focus:border-purple-400 transition">
+                    
+                    <select id="db-preference" required class="w-full bg-[#030408] border border-white/10 rounded-xl px-4 py-2.5 text-[13px] text-gray-400 focus:outline-none focus:border-purple-400 transition cursor-pointer">
+                        <option value="" disabled selected>Select Project Type</option>
+                        <option value="Custom Web Interface" class="text-white">Custom Web Interface / Website</option>
+                        <option value="Hardware Device" class="text-white">Hardware Device / Ambient Gadget</option>
+                        <option value="AI Assistant Software" class="text-white">AI Assistant Software / App Platform</option>
+                        <option value="Other Intelligent Ecosystem" class="text-white">Other Intelligent Ecosystem</option>
+                    </select>
+                </div>
+
+                <input type="email" id="db-email" placeholder="Your Contact Email Address" required class="w-full bg-[#030408] border border-white/10 rounded-xl px-4 py-2.5 text-[13px] text-white focus:outline-none focus:border-purple-400 transition">
+                
+                <textarea rows="4" id="db-description" required placeholder="Describe the feature set, UI/UX aesthetic, and your overarching concept for this build..." class="w-full bg-[#030408] border border-white/10 rounded-xl px-4 py-2.5 text-[13px] text-white focus:outline-none focus:border-purple-400 transition placeholder:text-gray-600"></textarea>
+                
+                <button type="submit" id="db-submit-btn" class="w-full bg-zinc-900 border border-white/10 hover:bg-white/5 text-gray-200 text-[12px] font-medium py-2.5 rounded-xl transition">
+                    Submit Project Blueprint
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Join Early Access Newsletter Form Section -->
+    <section id="join" class="max-w-4xl mx-auto px-6 py-24 text-center border-t border-white/5 relative">
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[400px] h-[300px] blur-purple pointer-events-none opacity-40"></div>
+        
+        <div class="text-[10px] tracking-widest uppercase text-purple-400 font-bold mb-6">Join Plixory</div>
+        <h2 class="text-4xl md:text-[56px] font-bold text-white tracking-tight mb-6">Join the future of Plixory.</h2>
+        <p class="text-gray-400 text-[14px] max-w-md mx-auto mb-10">
+            Get early access to research, products, and the next era of human–AI interaction.
+        </p>
+
+        <form id="newsletter-form" class="flex flex-col sm:flex-row items-center max-w-md mx-auto space-y-3 sm:space-y-0 sm:space-x-3">
+            <input type="email" id="newsletter-email" required placeholder="you@future.ai" class="w-full bg-[#070a0f] border border-white/10 rounded-xl px-4 py-3 text-[13px] text-white focus:outline-none focus:border-purple-500 transition placeholder:text-gray-600">
+            <button type="submit" id="newsletter-submit-btn" class="w-full sm:w-auto whitespace-nowrap bg-gradient-to-r from-purple-400 to-purple-300 text-black font-semibold text-[13px] px-6 py-3 rounded-xl hover:opacity-90 transition shadow-lg shadow-purple-500/20">
+                Request access
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer System -->
+    <footer class="max-w-7xl mx-auto px-6 md:px-16 py-10 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center text-[12px] text-gray-500 gap-4">
+        <div class="flex items-center space-x-2">
+            <span class="text-gray-400">✦</span>
+            <span>Plixory &copy; 2026</span>
+        </div>
+        <div class="italic tracking-wide text-gray-400">Emotional intelligence, by design.</div>
+    </footer>
+
+    <!-- LIVE ASYNC DATABASE CONTROLLER LAYER -->
+    <script>
+        // --- 1. Ecosystem Project Form Handling ---
+        const ecoForm = document.getElementById('ecosystem-form');
+        const ecoSubmitBtn = document.getElementById('db-submit-btn');
+
+        ecoForm.addEventListener("submit", event => {
+            event.preventDefault();
+            
+            ecoSubmitBtn.textContent = "Transmitting to Database...";
+            ecoSubmitBtn.disabled = true;
+
+            const payload = {
+                data: [{
+                    name: document.getElementById('db-name').value,
+                    preference: document.getElementById('db-preference').value,
+                    email: document.getElementById('db-email').value,
+                    description: document.getElementById('db-description').value
+                }]
+            };
+
+            // REPLACE 'YOUR_API_ID' below with your SheetDB API token generated from your Google Sheet
+            fetch('https://sheetdb.io/api/v1/f86y2rn7cth9n', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+            .then(res => res.json())
+            .then(data => {
+                alert('Success! Your build specifications have been recorded into the ecosystem database.');
+                ecoForm.reset();
+                ecoSubmitBtn.textContent = "Submit Project Blueprint";
+                ecoSubmitBtn.disabled = false;
+            })
+            .catch(err => {
+                console.error('Database upload error:', err);
+                alert('Database transmission failure. Please check your console runtime configurations.');
+                ecoSubmitBtn.textContent = "Submit Project Blueprint";
+                ecoSubmitBtn.disabled = false;
+            });
+        });
+
+        // --- 2. Newsletter Form Handling ---
+        const newsForm = document.getElementById('newsletter-form');
+        const newsSubmitBtn = document.getElementById('newsletter-submit-btn');
+
+        newsForm.addEventListener("submit", event => {
+            event.preventDefault();
+
+            newsSubmitBtn.textContent = "Joining...";
+            newsSubmitBtn.disabled = true;
+
+            const payload = {
+                data: [{
+                    name: "Early Access Subscriber",
+                    preference: "Newsletter Sub",
+                    email: document.getElementById('newsletter-email').value,
+                    description: "Requested early access to products/research via newsletter portal."
+                }]
+            };
+
+            // It fires into the exact same database spreadsheet but fills custom fallback labels!
+            fetch('https://sheetdb.io/api/v1/f86y2rn7cth9n', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+            .then(res => res.json())
+            .then(data => {
+                alert('Welcome to the future. You have been added to the early access ledger.');
+                newsForm.reset();
+                newsSubmitBtn.textContent = "Request access";
+                newsSubmitBtn.disabled = false;
+            })
+            .catch(err => {
+                console.error('Database connection error:', err);
+                alert('Failed to subscribe. Please try again.');
+                newsSubmitBtn.textContent = "Request access";
+                newsSubmitBtn.disabled = false;
+            });
+        });
+    </script>
+
+</body>
+</html>
